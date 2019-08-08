@@ -16,12 +16,10 @@ class Nav extends Component {
                     <ol id="test">
                         <li><NavLink to="/ZeitEintragen">ZeitEintragen</NavLink></li>
                         <li><NavLink to="/ZeitUebersicht">ZeitUebersicht</NavLink></li>
-
                     </ol>
                     <div className="content">
                         <Route path="/ZeitEintragen" component={ZeitEintragen} />
                         <Route path="/ZeitUebersicht" component={ZeitUebersicht} />
-
                     </div>
                 </div>
             </BrowserRouter>
