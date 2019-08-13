@@ -14,15 +14,12 @@ import Ferienuebersicht from "./Ferienuebersicht"
 class Nav extends Component {
     render() {
         return (
-            <SideNav>
-                showNav =  {this.state.showNav}
-                onHideNav =  {() => this.setState({ showNav: false })}
                 <BrowserRouter>
                     <div>
                         <ol id="test">
-                            items =  {[<li><NavLink to="/ZeitEintragen">ZeitEintragen</NavLink></li>,
-                            <li><NavLink to="/ZeitUebersicht">ZeitUebersicht</NavLink></li>,
-                            <li><NavLink to="/Ferienuebersicht">Ferienuebersicht</NavLink></li>]}
+                            <li><NavLink to="/ZeitEintragen">ZeitEintragen</NavLink></li>
+                            <li><NavLink to="/ZeitUebersicht">ZeitUebersicht</NavLink></li>
+                            <li><NavLink to="/Ferienuebersicht">Ferienuebersicht</NavLink></li>
                         </ol>
                         <div className="content">
                             <Route path="/ZeitEintragen" component={ZeitEintragen} />
@@ -31,7 +28,7 @@ class Nav extends Component {
                         </div>
                     </div>
                 </BrowserRouter>
-            </SideNav>
+            
         );
     }
 }
