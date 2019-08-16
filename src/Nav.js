@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './nav.css';
-import SideNav from 'react-simple-sidenav';
+import SideNav, {MenuIcon} from 'react-simple-sidenav';
 import {
     Route,
     NavLink,
@@ -15,6 +15,12 @@ class Nav extends Component {
     render() {
         return (
                 <BrowserRouter>
+                    <MenuIcon onClick={() => this.setState({showNav: true})}/>
+                     <SideNav
+                         showNav = {true}
+                         onHideNav = {() => this.setState({showNav: false})}
+                 
+                             />
                     <div>
                         <ol id="test">
                             <li><NavLink to="/ZeitEintragen">ZeitEintragen</NavLink></li>

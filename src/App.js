@@ -10,13 +10,10 @@ function App() {
   return (
     
     <div className="App">
-        <MenuIcon onClick={() => this.setState({showNav: true})}/>
-         <SideNav
-         showNav = {true}
-         onHideNav = {() => this.setState({showNav: false})}>
+     
             <Nav /> 
-         </SideNav>
-         <Content />
+       
+
     </div>
   );
 }
