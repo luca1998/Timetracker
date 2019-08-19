@@ -16,7 +16,7 @@ class Nav extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            showNav: true,
+            showNav: false,
         }
     }
 
@@ -24,21 +24,20 @@ class Nav extends Component {
         return (
 
             <BrowserRouter>
-
-                <MenuIcon onClick={() => this.setState({ showNav: true })}
-                    style={{ verticalAlign: 'middle', padding: '12px' }} />
                 <SideNav
+                    openFromRight={true}
                     showNav={this.state.showNav}
                     onHideNav={() => this.setState({ showNav: false })}
-
+                    title="test"
+                    items={[<NavLink to="/ZeitEintragen">ZeitEintragen</NavLink>,
+                    <NavLink to="/ZeitUebersicht">ZeitUebersicht</NavLink>,
+                    <NavLink to="/Ferienuebersicht">Ferienuebersicht</NavLink>]}
+                    itemHoverStyle={{ backroundColor: '#a39f9e' }}
 
                 />
+
                 <div>
-                    <ol id="test">
-                        <li><NavLink to="/ZeitEintragen">ZeitEintragen</NavLink></li>
-                        <li><NavLink to="/ZeitUebersicht">ZeitUebersicht</NavLink></li>
-                        <li><NavLink to="/Ferienuebersicht">Ferienuebersicht</NavLink></li>
-                    </ol>
+                    <button onClick={() => this.setState({ showNav: true })} />
                     <div className="content">
                         <Route path="/ZeitEintragen" component={ZeitEintragen} />
                         <Route path="/ZeitUebersicht" component={ZeitUebersicht} />
