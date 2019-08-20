@@ -1,3 +1,10 @@
 li{
     color: lime;
 }
+button{
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    font-size: 30px;
+    
+}

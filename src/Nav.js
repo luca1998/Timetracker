@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './nav.css';
-import SideNav, { MenuIcon } from 'react-simple-sidenav';
+import SideNav from 'react-simple-sidenav';
 import {
     Route,
     NavLink,
@@ -9,7 +9,6 @@ import {
 import ZeitEintragen from "./ZeitEintragen";
 import ZeitUebersicht from "./ZeitUebersicht";
 import Ferienuebersicht from "./Ferienuebersicht"
-
 
 class Nav extends Component {
 
@@ -37,7 +36,9 @@ class Nav extends Component {
                 />
 
                 <div>
-                    <button onClick={() => this.setState({ showNav: true })} />
+                    <button onClick={() => this.setState({ showNav: true })} >
+                        m
+                    </button>
                     <div className="content">
                         <Route path="/ZeitEintragen" component={ZeitEintragen} />
                         <Route path="/ZeitUebersicht" component={ZeitUebersicht} />
