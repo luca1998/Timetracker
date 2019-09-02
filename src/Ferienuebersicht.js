@@ -26,26 +26,24 @@ class Ferienuebersicht extends Component {
     handleChangeEnd(date) {
         this.setState({
             endDate: date
-        })
+        });
     }
 
     render() {
         return (
             <div>
-                <div id="datepickers">
+                <div id="vacationForm">
                     <DatePicker id="datepickerStart"
                         selected={this.state.startDate}
                         onChange={this.handleChange}
                     />
-                    <DatePicker
+                    <DatePicker id="datepickerEnd"
                         selected={this.state.endDate}
                         onChange={this.handleChangeEnd}
                     />
                 </div>
 
-
             </div>
-
 
         );
     }

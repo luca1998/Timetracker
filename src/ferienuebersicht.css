@@ -1,11 +1,27 @@
 body{
-    background-color: rgb(175, 180, 175);
+    background-color: rgb(59, 64, 255);
 }
 
 #datepickerStart{
-    font-size: 20px
+    font-size: 150%;
+    border-radius: 5px;
+    margin-top: 10%;
+    
 }
-#datepickers{
-    margin-top: 100px;
-    background-color: lime;
+#datepickerEnd{
+    font-size: 150%;
+    border-radius: 5px;
+    margin-top: 10%;
+    
 }
+#vacationForm{
+    position: absolute;
+    top: 33%;
+    left: 25%;
+    background: rgba(209, 203, 203, 0.5);
+    height: 33vh;
+    width: 50vw;
+    border-radius: 5px;
+    
+}
+
