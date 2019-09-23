@@ -1,7 +1,23 @@
-body{
-    background-color: white;
+#timetrack {
+    position: absolute;
+    top: 33%;
+    left: 25%;
+    background: rgba(209, 203, 203, 0.5);
+    height: 33vh;
+    width: 50vw;
+    border-radius: 5px;
 }
-
-#time{
-    font-size: 20px;
+#input{
+    font-size: 30px;
+    width: 20vh;
+}
+#time {
+    font-size: 40px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: none;
+}
+#btn {
+    float: right;
+    margin-right: 2vh;
 }

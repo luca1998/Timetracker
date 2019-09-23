@@ -1,9 +1,8 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import './App.css';
 import './ferienuebersicht.css';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-
 
 class Ferienuebersicht extends Component {
 
@@ -30,17 +29,25 @@ class Ferienuebersicht extends Component {
     }
 
     render() {
+        let style ={
+            float: "left",
+            width: "50vh"
+        }
         return (
             <div>
+
                 <div id="vacationForm">
                     <DatePicker id="datepickerStart"
-                        selected={this.state.startDate}
-                        onChange={this.handleChange}
+                                selected={this.state.startDate}
+                                onChange={this.handleChange}
                     />
                     <DatePicker id="datepickerEnd"
-                        selected={this.state.endDate}
-                        onChange={this.handleChangeEnd}
+                                selected={this.state.endDate}
+                                onChange={this.handleChangeEnd}
                     />
+                    <br/>
+                    <br/>
+                    <textarea style={style}></textarea>
                 </div>
 
             </div>
